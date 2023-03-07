@@ -23,3 +23,20 @@ Select "Start from scratch", choose a name for your organization and create it.
 
 Configure a workspace:
 
+- Run the `packer build .\bastion.pkr.hcl` to create ami for bastion
+
+[Packer Build Bastion Ami](./images/packer-build-bastion.PNG)
+
+- Run the `packer build .\nginx.pkr.hcl` to create ami for nginx
+
+[Packer Build Nginx Ami](./images/packer-build-nginx.PNG)
+
+- Run the `packer build .\ubuntu.pkr.hcl` to create ami for ubuntu
+
+[Packer Build Ubuntu Ami](./images/packer-build-ubuntu.PNG)
+
+- Run the `packer build .\web.pkr.hcl` to create ami for web
+
+[Packer Build Web Ami](./images/packer-build-web.PNG)
+
+[Aws Amis Output](./images/aws-amis-output.PNG)

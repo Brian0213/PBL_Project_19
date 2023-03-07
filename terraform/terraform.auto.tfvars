@@ -1,6 +1,6 @@
 region = "us-east-1"
 
-vpc_cidr = "10.0.0.0/16"
+vpc_cidr = "172.16.0.0/16"
 
 enable_dns_support = "true"
 
@@ -16,24 +16,24 @@ preferred_number_of_private_subnets = 4
 
 environment = "dev"
 
-ami-web = "ami-00a45107f7c3455a5"
+ami-web = "ami-07ff7aed7c1c7fcb0"
 
-ami-bastion = "ami-0dbc99375eba56ff4"
+ami-bastion = "ami-00860453954c6ce6a"
 
-ami-nginx = "ami-010bd88cc8f5997f3"
+ami-nginx = "ami-04a86f37bfc866503"
 
-ami-sonar = "ami-0f8bd95a744e074b8"
+ami-sonar = "ami-02c1c9f5b1298e820"
 
-keypair = "devops"
+keypair = "pbl-learn"
 
-master-password = "devopspblproject"
+master-password = "brian1234"
 
-master-username = "david"
+master-username = "brian"
 
-account_no = "696742900004"
+account_no = "451594895880"
 
 tags = {
-  Owner-Email     = "infradev-segun@darey.io"
+  Owner-Email     = "olusegunojeyinka@gmail.com"
   Managed-By      = "Terraform"
   Billing-Account = "1234567890"
 }
