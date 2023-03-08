@@ -24,6 +24,12 @@ ami-nginx = "ami-04a86f37bfc866503"
 
 ami-sonar = "ami-02c1c9f5b1298e820"
 
+ami-jfrog = "ami-02c1c9f5b1298e820"
+
+ami-jenkins = "ami-02c1c9f5b1298e820"
+
+ami-artifactory = "ami-02c1c9f5b1298e820"
+
 keypair = "pbl-learn"
 
 master-password = "brian1234"
