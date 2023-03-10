@@ -40,3 +40,7 @@ Configure a workspace:
 [Packer Build Web Ami](./images/packer-build-web.PNG)
 
 [Aws Amis Output](./images/aws-amis-output.PNG)
+
+Command to destroy IAM profile
+
+`aws iam delete-instance-profile --instance-profile-name aws_instance_profile_test`

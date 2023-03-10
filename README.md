@@ -60,3 +60,5 @@ Direct hardcoding of values
 Inputting credentials directly in the script
 
 Useful links for windows users https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54
+
+https://docs.aws.amazon.com/cli/latest/reference/iam/delete-instance-profile.html
