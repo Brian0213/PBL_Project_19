@@ -26,7 +26,7 @@ output "private_subnets-3" {
 }
 
 
-output "private_subnets-4" {
+output "private_subnets-3" {
   value       = aws_subnet.private[3].id
   description = "The fourth private subnet"
 }
