@@ -1,45 +1,45 @@
 # ############################
 # #creating bucket for s3 backend
 # ########################
-# resource "aws_s3_bucket" "terraform_state" {
-#   # bucket = "19@pBl"
-
-#   versioning {
-#     enabled = true
-#   }
-#   force_destroy = true
-
-#   server_side_encryption_configuration {
-#     rule {
-#       apply_server_side_encryption_by_default {
-#         sse_algorithm = "AES256"
-#       }
-#     }
-#   }
-# }
-
-############################
-#creating bucket for s3 backend
-########################
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "19@pBl"
-  force_destroy = true
-}
-resource "aws_s3_bucket_versioning" "version" {
-  bucket = aws_s3_bucket.terraform-state.id
-  versioning_configuration {
+  # bucket = "19@pBl"
+
+  versioning {
     enabled = true
-    status = "Enabled"
   }
-}
-resource "aws_s3_bucket_server_side_encryption_configuration " "first" {
-    bucket = aws_s3_bucket.terraform-state.id
+  force_destroy = true
+
+  server_side_encryption_configuration {
     rule {
       apply_server_side_encryption_by_default {
         sse_algorithm = "AES256"
       }
     }
   }
+}
+
+############################
+#creating bucket for s3 backend
+########################
+# resource "aws_s3_bucket" "terraform_state" {
+#   bucket = "19@pBl"
+#   force_destroy = true
+# }
+# resource "aws_s3_bucket_versioning" "version" {
+#   bucket = aws_s3_bucket.terraform-state.id
+#   versioning_configuration {
+#     enabled = true
+#     status = "Enabled"
+#   }
+# }
+# resource "aws_s3_bucket_server_side_encryption_configuration " "first" {
+#     bucket = aws_s3_bucket.terraform-state.id
+#     rule {
+#       apply_server_side_encryption_by_default {
+#         sse_algorithm = "AES256"
+#       }
+#     }
+#   }
 
 
 resource "aws_dynamodb_table" "terraform_locks" {
