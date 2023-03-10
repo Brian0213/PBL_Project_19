@@ -127,7 +127,7 @@ module "RDS" {
   db-password     = var.master-password
   db-username     = var.master-username
   db-sg           = [module.security.datalayer-sg]
-  private_subnets = [module.VPC.private_subnets-3, module.VPC.private_subnets-3]
+  private_subnets = [module.VPC.private_subnets-2, module.VPC.private_subnets-2]
 }
 
 # The Module creates instances for jenkins, sonarqube abd jfrog
