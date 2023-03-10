@@ -2,7 +2,7 @@
 
 # Create the certificate using a wildcard for all the domains created in david.toolingabby.com
 resource "aws_acm_certificate" "toolsibadan" {
-  domain_name       = "*toolsibadan.ga"
+  domain_name       = "*.toolsibadan.ga"
   validation_method = "DNS"
 }
 
