@@ -12,7 +12,7 @@ enable_classiclink_dns_support = "false"
 
 preferred_number_of_public_subnets = 2
 
-preferred_number_of_private_subnets = 4
+preferred_number_of_private_subnets = 3
 
 environment = "dev"
 
@@ -24,11 +24,11 @@ ami-nginx = "ami-04a86f37bfc866503"
 
 ami-sonar = "ami-02c1c9f5b1298e820"
 
-ami-jfrog = "ami-02c1c9f5b1298e820"
+# ami-jfrog = "ami-02c1c9f5b1298e820"
 
-ami-jenkins = "ami-02c1c9f5b1298e820"
+# ami-jenkins = "ami-02c1c9f5b1298e820"
 
-ami-artifactory = "ami-02c1c9f5b1298e820"
+# ami-artifactory = "ami-02c1c9f5b1298e820"
 
 keypair = "pbl-learn"
 
