@@ -9,7 +9,7 @@ output "public_subnets-2" {
 }
 
 
-output "private_subnets-1" {
+output "private_subnets-0" {
   value       = aws_subnet.private[0].id
   description = "The first private subnet"
 }
@@ -20,7 +20,7 @@ output "private_subnets-2" {
 }
 
 
-output "private_subnets-3" {
+output "private_subnets-2" {
   value       = aws_subnet.private[2].id
   description = "The third private subnet"
 }
