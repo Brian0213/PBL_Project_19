@@ -1,8 +1,8 @@
 # terraform {
 #   backend "s3" {
-#     bucket         = "pbl-test-18"
+#     bucket         = "19@pBl"
 #     key            = "global/s3/terraform.tfstate"
-#     region         = "us-east-1"
+#     region         = "eu-west-1"
 #     dynamodb_table = "terraform-locks"
 #     encrypt        = true
 #   }
@@ -10,10 +10,10 @@
 
 terraform {
   backend "remote" {
-    organization = "pisitis"
+    organization = "Ajtoy"
 
     workspaces {
-      name = "PBL-19"
+      name = "PBL_Project_19"
     }
   }
 }
