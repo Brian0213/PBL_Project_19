@@ -20,10 +20,10 @@ output "private_subnets-1" {
 }
 
 
-output "private_subnets-2" {
-  value       = aws_subnet.private[2].id
-  description = "The third private subnet"
-}
+# output "private_subnets-2" {
+#   value       = aws_subnet.private[2].id
+#   description = "The third private subnet"
+# }
 
 
 # output "private_subnets-3" {
