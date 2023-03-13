@@ -1,8 +1,8 @@
 # create DB subnet group from the private subnets
 resource "aws_db_subnet_group" "ACS-rds" {
   name       = "acs-rds"
-  # subnet_ids = var.private_subnets
-  subnet_ids = [var.private_subnets, var.private_subnets2]
+  subnet_ids = var.private_subnets
+  # subnet_ids = [var.private_subnets, var.private_subnets2]
 
   tags = merge(
     var.tags,
