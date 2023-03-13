@@ -2,7 +2,7 @@
 resource "aws_db_subnet_group" "ACS-rds" {
   name       = "acs-rds"
   # subnet_ids = var.private_subnets
-  subnet_ids = [var.private_subnets.1, var.private_subnets.2]
+  subnet_ids = [var.private_subnets1, var.private_subnets2]
 
   tags = merge(
     var.tags,
