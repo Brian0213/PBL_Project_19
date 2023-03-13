@@ -2,7 +2,7 @@
 resource "aws_db_subnet_group" "ACS-rds" {
   name       = "acs-rds"
   # subnet_ids = var.private_subnets
-  subnet_ids = [var.private_subnets1, var.private_subnets2]
+  subnet_ids = [var.private_subnets, var.private_subnets2]
 
   tags = merge(
     var.tags,
@@ -19,7 +19,7 @@ resource "aws_db_instance" "ACS-rds" {
   engine                 = "mysql"
   engine_version         = "5.7"
   instance_class         = "db.t2.micro"
-  name                   = "daviddb"
+  db_name                = "briandb"
   username               = var.db-username
   password               = var.db-password
   parameter_group_name   = "default.mysql5.7"
