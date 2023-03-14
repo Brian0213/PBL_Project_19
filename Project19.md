@@ -44,3 +44,19 @@ Configure a workspace:
 Command to destroy IAM profile
 
 `aws iam delete-instance-profile --instance-profile-name aws_instance_profile_test`
+
+`ansible-inventory -i inventory/aws_ec2.yml --graph -vvv`
+
+Run Ansible playbook
+
+SSH into bastion
+
+From bastion ssh into nginx, tooling and wordpress
+
+Error in the Bastion curl wordpress
+
+- To fix the error:
+
+`sudo vi wp-config.php`
+
+
